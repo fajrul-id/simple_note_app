@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar membuat aplikasi note app simple dengan local storage">
+    <title>Simple Note App</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="brand">Note App</h1>
+            <span class="material-symbols-outlined" id="menu_icon">
+                menu
+            </span>
+        </nav>
+    </header>
+    <aside class="aside_menu" id="aside_menu">
+        <menu class="mobile_menu" id="mobile_menu">
+            <div class="menu_header">
+                <span class="material-symbols-outlined" id="close_icon">
+                    close
+                </span>
+            </div>
+            <ul class="menu_list">
+                <li>
+                    <a href="/">register</a>
+                </li>
+                <li>
+                    <a href="/">login</a>
+                </li>
+                <li>
+                    <a href="/">about</a>
+                </li>
+            </ul>
+        </menu>
+    </aside>
+    <main class="container">
+
+        <form class="form_auth" autocomplete="off" id="form_auth">
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form_group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="form_group">
+                <label for="password2">Repeat Password</label>
+                <div class="form_control">
+                    <input type="password" id="password2" required>
+                    <span class="material-symbols-outlined" id="togglepass">visibility</span>
+                </div>
+                <small class="helper" id="helper_pass">password harus sama</small>
+            </div>
+
+            <button type="submit">Register</button><a href="login.html">Sudah punya akun <b>login disini</b></a>
+        </form>
+
+        <footer>
+            <small>copyright fadli@2022</small>
+        </footer>
+    </main>
+    <script src="./main.js" type="module" defer></script>
+</body>
+
+</html>
