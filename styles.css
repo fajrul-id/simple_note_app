@@ -313,6 +313,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100px;
 }
 
 .form_auth a {
